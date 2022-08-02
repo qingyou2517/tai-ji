@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>会动的代码-太极图</title>
+</head>
+<body>
+    <div id="html"></div>  
+     <!-- 给用户看的html  -->
+
+    <div id="div1wrapper">
+        <div id="div1"></div>   
+    </div> 
+     <!-- 太极图  -->
+
+    <style id="style"></style>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        *::after{
+            box-sizing: border-box;
+        }
+        *::after{
+            box-sizing: border-box;
+        }
+        #div1 {
+            position: fixed;
+            right:20px;
+            top:20px;
+        }
+        #html{
+            word-break: break-all; /*css 换行*/
+        }
+
+        @media (max-width:500px){
+            /*  媒体查询：宽度小于500px，视为手机页面 */
+           
+            #html{
+                height: 50vh;
+                /* border: 1px solid #000; */
+                overflow: auto;
+            }
+            #div1wrapper{
+                height: 50vh;
+                /* border: 1px solid red; */
+                display:flex;   
+                justify-content:center;
+                /* 盒子水平居中 */
+                align-items:center;
+                /* 盒子垂直居中 */
+            }
+            #div1{
+                /* border: 1px solid red; */
+                position: relative;
+                top: 0;
+                right: 0;
+            }
+        }
+    </style>
+    
+    <script src="/main.5e0fe58e.js"></script>
+</body>
+</html>
