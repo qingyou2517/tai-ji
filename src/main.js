@@ -1,5 +1,5 @@
 let html = document.querySelector("#html");
-// 用css选择器找到"#html"
+// 用css选择器找到 "#html"
 let style=document.querySelector('#style');
 
 let string=`/*你好，我叫青游

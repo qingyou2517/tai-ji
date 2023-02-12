@@ -105,7 +105,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   return newRequire;
 })({"epB2":[function(require,module,exports) {
 var html = document.querySelector("#html");
-// 用css选择器找到"#html"
+// 用css选择器找到 "#html"
 var style = document.querySelector('#style');
 
 var string = '/*\u4F60\u597D\uFF0C\u6211\u53EB\u9752\u6E38\n *\u63A5\u4E0B\u6765\uFF0C\u6211\u8981\u6F14\u793A\u4E00\u4E0B\u6211\u7684\u524D\u7AEF\u529F\u5E95\n *\u9996\u5148\uFF0C\u6211\u8981\u51C6\u5907\u4E00\u4E2Adiv\n **/\n #div1 {\n    border:1px solid red;\n    width:200px; \n    height:200px;\n\n}\n/*\u63A5\u4E0B\u6765\uFF0C\u628Adiv\u53D8\u6210\u53D8\u6210\u4E00\u5F20\u592A\u6781\u516B\u5366\u56FE\n *\u6CE8\u610F\u770B\u597D\u55BD\uFF01\uFF01\n *\u9996\u5148\uFF0C\u628Adiv\u53D8\u6210\u5706\n**/\n#div1{\n    position:relative;\n    border-radius:50%;\n    box-shadow:0 0 3px rgba(0,0,0,0.5);\n    border:none;\n}\n/*\u516B\u5366\u662F\u4E00\u9634\u4E00\u9633\n *\u5148\u753B\u9634\u9633\u9C7C\n **/\n#div1{\n    \n    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(0,0,0,1) 50%, rgba(0,0,0,1) 100%);\n}\n#div1::before{\n    display:block;\n    position:absolute;\n    content:\'\';\n    \n    width:100px;\n    height:100px;\n    left:50%;\n    transform: translateX(-50%);\n    border-radius:50%;\n    background:black;\n}\n#div1::after{\n    display:block;\n    position:absolute;\n    content:\'\';\n    \n    width:100px;\n    height:100px;\n    left:50%;\n    transform: translateX(-50%);\n    border-radius:50%;\n    background:white;\n    bottom:0;\n}\n/*\u800C\u9634\u4E2D\u6709\u9633\uFF0C\u9633\u4E2D\u6709\u9634\n *\u6545\u518D\u6DFB\u9634\u9633\u773C\n **/\n #div1::before{\n    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 20%, rgba(0,0,0,1) 20%, rgba(0,0,0,1) 100%);\n}\n#div1::after{\n    background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 20%, rgba(255,255,255,1) 20%, rgba(255,255,255,1) 100%);\n}\n\n';
@@ -150,4 +150,4 @@ var step = function step() {
 
 step();
 },{}]},{},["epB2"], null)
-//# sourceMappingURL=main.0a62f2d1.map
+//# sourceMappingURL=main.bc72cfc5.map
